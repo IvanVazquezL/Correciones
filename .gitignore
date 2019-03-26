@@ -1,0 +1,29 @@
+# Git meta files
+!.gitignore
+!.gitattributes
+!README.md
+!DEPLOYMENT.md
+
+# Whitelisted directories/files
+!/ProjectSettings/
+!/Assets/                # Add Assets folder, but ...
+/Assets/*                # Remove everything under Assets again.
+!/Assets/_core/          # Now add back our core game folders.
+!/Assets/_modules/
+
+# Any modules kept in their own git repo.
+Assets/_modules/fps/
+
+# ============ #
+# OS generated #
+# ============ #
+.DS_Store*
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+[Tt]humbs.db
+[Dd]esktop.ini
+Corridor/Library/ShaderCache/
+Corridor/Library/metadata/
